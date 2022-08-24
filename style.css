@@ -1,0 +1,241 @@
+
+
+
+h1 {
+font-size: 1.2em;
+
+
+}
+
+h3 {
+    margin-bottom:0.5em;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+.container {
+display:grid;
+grid-template-columns: 1fr 5fr;
+grid-template-rows: 1fr 6fr;
+height:100vh;
+
+}
+
+li {
+    cursor:pointer;    
+    }
+    
+    .m-img {
+        margin-top: 5px;
+        width: 25px;
+        height: 20px;
+       
+     }
+     
+     .s-img {
+         width: 12px;
+         height: 12px;
+         margin-top: 5px;
+     }
+
+     .l-img {
+       
+        width: 35px;
+        height:30px;
+
+     }
+     
+
+
+
+/* Dashboard section */
+
+.dashboard {
+display:grid;
+grid-template-rows: 1fr 3fr 3fr;
+
+gap:1em;
+color:black;
+grid-row:1 / 4;
+padding: 1em;
+background: rgb(71, 149, 212) repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.dashboard ul  {
+list-style-type: none;
+line-height: 1.5;
+}
+
+.dashboard li {
+    display:flex;
+    align-items: stretch;
+    gap: 10px;
+}
+
+
+   
+
+
+
+/*Header section    */
+
+/* box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit; */
+.header {
+box-shadow: 0px 5px 8px 1px #888888;
+margin:0px;
+}
+
+.search-section ,.button-section{
+    display:flex;
+    margin-bottom: 1em;
+
+  
+}
+
+.button-section button {
+background-color:rgb(37, 152, 219);
+color:white;
+border-radius: 10px;
+width: 50px;
+height: 30px;
+
+
+}
+
+
+.search-section ul, .button-section ul {
+  display:flex;
+  list-style-type: none;
+  gap:0.5em;
+  align-items: center;
+  
+   
+
+}
+
+
+.searchbar {
+
+background-color: rgb(229, 231, 235);
+border-radius: 25px;
+border: 1px solid white;
+height: 18px;
+align-content: center;
+justify-content: center;
+margin-right: 10em;
+
+}
+
+.search-icon {
+margin-top: -0.01px;
+}
+
+/*   Main Content Section    */
+
+.main-content {
+ background-color: rgb(237, 226, 226);
+
+}
+/*  Article Section   */
+.article {
+    margin:1em;
+display:flex;
+ flex-wrap: wrap;
+ gap:1em;
+}
+
+
+.article .card {
+    flex: 1 1 500px;
+    flex-wrap: wrap;
+    height: 1fr;
+    background-color: white;
+   border-radius: 10px;
+padding:1em;
+}
+
+
+
+
+.article-title {
+margin:1em;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* end of Article section...  */
+
+
+
+
+
+/* making sure everything is responsive... */
+
+@media only screen and (min-width: 1000px) {
+    .dashboard .card {
+        display:flex;
+    
+    font-size: 1.5em;
+    }
+    .s-img {
+        width: 15px;
+        height:15px;
+        margin-top: 10px;
+    }
+
+   .m-img {
+    margin-top: 7px;
+    width: 35px;
+    height: 30px;
+
+   }
+   .l-img {
+    width: 45px;
+    height: 40px;
+
+   }
+
+
+
+   .searchbar {
+    width:300px;
+    height: auto;
+   }
+   .search-section .my-name {
+    font-size: 1.3em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    }
+    
+    
+     .button-section .my-name {
+        font-size: 1.5em;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        }
+    
+        .button-section button {
+           
+            width: 80px;
+            height: 40px;
+            
+            
+            }
+
+
+
+}
+
+
+
+
+
+
